@@ -20,7 +20,7 @@ Welcome to the 100 Days of GCP Challenge! This comprehensive learning path cover
 [Day 4: Load Balancer](/compute-networking/day-4-load-balancer/)  
 [Day 5: Autoscaling](/compute-networking/day-5-autoscaling/)  
 [Day 6: Custom Images](/compute-networking/day-6-custom-images/)  
-[Day 7: Preemptible VMs](/compute-networking/day-7-preemptible-vms/)  
+[Day 7: Spot VMs](/compute-networking/day-7-spot-vms/)  
 [Day 8: Cloud Run Deployment](/compute-networking/day-8-cloud-run/)  
 [Day 9: VPC Network](/compute-networking/day-9-vpc-network/)  
 [Day 10: Private Google Access](/compute-networking/day-10-private-access/)  
