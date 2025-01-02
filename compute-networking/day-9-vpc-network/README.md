@@ -54,7 +54,8 @@ gcloud compute networks subnets delete data-collection-subnet --region=us-centra
 gcloud compute networks subnets delete data-analyst-subnet --region=us-central1 --quiet
 gcloud compute networks subnets delete finance-subnet --region=us-central1 --quiet
 gcloud compute networks subnets delete collaboration-subnet --region=us-central1 --quiet
-```
+
 gcloud compute networks delete research-vpc --quiet
 gcloud compute networks delete finance-vpc --quiet
 gcloud compute networks delete collaboration-vpc --quiet
+```
