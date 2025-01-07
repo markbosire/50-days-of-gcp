@@ -41,7 +41,7 @@ This script automates the deployment of a portfolio website on Google Cloud Plat
 5. **Outputs the Static IP**:  
    - After deployment, the script outputs the static IP address where the portfolio website will be accessible.
 
-## Optional: Custom Domain Setup
+## Custom Domain Setup
 
 If you have a custom domain, add an **A record** in your DNS provider to map the domain to the static IP address provided by the script.
 
