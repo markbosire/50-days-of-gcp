@@ -28,7 +28,7 @@ Welcome to the 100 Days of GCP Challenge! This comprehensive learning path cover
 [Day 12: Inter-VPC Connectivity](/compute-networking/day-12-vpc-peering/)  
 [Day 13: Hybrid Networking](/compute-networking/day-13-hybrid-networking/)  
 [Day 14: Firewall Rules](/compute-networking/day-14-firewall-rules/)  
-[Day 15: VPC-Peering-and-CloudVPN](/compute-networking/day-15-vpc-vpn/)  
+[Day 15: VPC Peering and Cloud VPN](/compute-networking/day-15-vpc-vpn/)  
 [Day 16: Instance Templates](/compute-networking/day-16-instance-templates/)  
 [Day 17: Reserve IP Addresses](/compute-networking/day-17-reserve-ip/)  
 [Day 18: Cloud DNS](/compute-networking/day-18-cloud-dns/)  
