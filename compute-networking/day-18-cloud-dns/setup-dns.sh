@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the domain name
-DOMAIN="markbosire.click"
+DOMAIN="example.com"
 
 # Enable necessary Google Cloud APIs
 echo "Enabling necessary Google Cloud APIs..."
