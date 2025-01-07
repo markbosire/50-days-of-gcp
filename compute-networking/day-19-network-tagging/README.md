@@ -18,6 +18,20 @@ This script automates the creation of a Virtual Private Cloud (VPC), configures 
    ```bash
    bash setup_vpc_and_test.sh
    ```
+## Clean up
+
+```
+gcloud compute instances delete sales-vm --zone=us-central1-a --quiet
+gcloud compute instances delete hr-vm --zone=us-central1-a --quiet
+gcloud compute instances delete it-vm --zone=us-central1-a --quiet
+
+gcloud compute firewall-rules delete allow-it-to-all-vms --quiet
+gcloud compute firewall-rules delete allow-ssh-to-all-vms --quiet
+gcloud compute firewall-rules delete allow-hr-sales-to-it-port80 --quiet
+
+gcloud compute networks subnets delete corp-subnet --region=us-central1 --quiet
+gcloud compute networks delete corporate-vpc --quiet
+```
 
 ## What the Script Does
 - Creates a VPC named `corporate-vpc` with a custom subnet.
