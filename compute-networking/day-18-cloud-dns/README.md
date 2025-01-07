@@ -43,7 +43,6 @@ This script automates the deployment of a portfolio website on Google Cloud. It 
 
 ## **Cleanup**
 ```
-To delete all resources created by the script, run the cleanup commands provided in the script or documentation.
 gcloud compute forwarding-rules delete portfolio-https-forwarding-rule --global --quiet
 gcloud compute target-https-proxies delete portfolio-https-proxy --quiet
 gcloud compute url-maps delete portfolio-url-map --quiet
