@@ -18,6 +18,11 @@ This script automates the creation of a Virtual Private Cloud (VPC), configures 
    ```bash
    bash setup_vpc_and_test.sh
    ```
+## What the Script Does
+- Creates a VPC named `corporate-vpc` with a custom subnet.
+- Sets up firewall rules to allow specific traffic (e.g., SSH, HTTP) between tagged VMs.
+- Deploys three VMs (`sales-vm`, `hr-vm`, `it-vm`) with `hping3` installed.
+- Tests connectivity between VMs to ensure firewall rules are enforced.
 ## Clean up
 
 ```
@@ -32,11 +37,4 @@ gcloud compute firewall-rules delete allow-hr-sales-to-it-port80 --quiet
 gcloud compute networks subnets delete corp-subnet --region=us-central1 --quiet
 gcloud compute networks delete corporate-vpc --quiet
 ```
-
-## What the Script Does
-- Creates a VPC named `corporate-vpc` with a custom subnet.
-- Sets up firewall rules to allow specific traffic (e.g., SSH, HTTP) between tagged VMs.
-- Deploys three VMs (`sales-vm`, `hr-vm`, `it-vm`) with `hping3` installed.
-- Tests connectivity between VMs to ensure firewall rules are enforced.
-
 
