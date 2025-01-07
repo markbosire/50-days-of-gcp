@@ -1,6 +1,3 @@
-Below is a brief `README.md` file for the `deploy_portfolio.sh` script. It provides an overview of the script, prerequisites, and instructions for use.
-
----
 
 # Deploy Portfolio Website on Google Cloud Platform (GCP)
 
