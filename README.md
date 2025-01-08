@@ -33,7 +33,7 @@ Welcome to the 100 Days of GCP Challenge! This comprehensive learning path cover
 [Day 17: Reserve IP Addresses](/compute-networking/day-17-reserve-ip/)  
 [Day 18: Cloud DNS](/compute-networking/day-18-cloud-dns/)  
 [Day 19: Network Tagging](/compute-networking/day-19-network-tagging/)  
-[Day 20: Cloud Armor](/compute-networking/day-20-cloud-armor/)  
+[Day 20: Deployment Manager](/compute-networking/day-20-deployment-manager/)  
 
 ### Domain 2: Storage and Databases
 
