@@ -48,7 +48,7 @@ This script deploys and describes instances in a Google Cloud environment using 
 
 ## Usage
 
-Run the script in your terminal or as part of your CI/CD pipeline to deploy and manage instances for your environment.
+Run the script in your terminal.
  ```bash
   bash setup-deployment.sh     
  ```
