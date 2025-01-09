@@ -6,7 +6,7 @@ Welcome to the 100 Days of GCP Challenge! This comprehensive learning path cover
 ## Prerequisites
 - A Google Cloud Platform account
 - Basic understanding of cloud computing concepts
-- Familiarity with command-line interfaces
+- Familiarity with command-line interfaces and bash 
 - Basic programming knowledge
 - Access to GCP Console and Cloud Shell
 
