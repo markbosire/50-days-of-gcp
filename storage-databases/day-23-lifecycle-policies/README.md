@@ -34,8 +34,4 @@ This script automates the creation of a Google Cloud Storage (GCS) bucket and ap
   - Confirmation of lifecycle policy application.
   - JSON-formatted lifecycle configuration for verification.
 
-## Example
 
-```bash
-bash script_name.sh
-```
