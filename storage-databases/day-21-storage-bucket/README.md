@@ -13,3 +13,8 @@ This script automates the process of hosting a static website on Google Cloud St
    ```bash
    bash script_name.sh
    ```
+## Clean Up
+   ```bash
+   BUCKET_NAME="$(gcloud config get-value project)-portfolio"
+   gcloud storage rm gs://${BUCKET_NAME} --recursive
+   ```
