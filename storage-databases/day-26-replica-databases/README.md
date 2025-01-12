@@ -46,8 +46,8 @@ The script performs the following steps:
 ## **Cleanup**
 To avoid incurring charges, delete the resources after testing:
 ```bash
-gcloud sql instances delete primary-db
 gcloud sql instances delete replica-db
+gcloud sql instances delete primary-db
 gcloud compute instances delete mysql-client-vm --zone=us-central1-a
 gcloud compute firewall-rules delete allow-mysql-from-vm
 ```
