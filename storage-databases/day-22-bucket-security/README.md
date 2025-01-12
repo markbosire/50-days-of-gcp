@@ -23,3 +23,33 @@ This script automates the creation and configuration of Google Cloud service acc
    bash script_name.sh
    ```
 Review the output to verify the results of the automated tests.
+## Clean up
+```bash
+PROJECT_ID=$(gcloud config get-value project) # Get current project ID
+BUCKET_NAME="techcorp-financial-reports-$PROJECT_ID" # Unique bucket name using Project ID
+LOCATION="us-central1"
+FINANCE_TEAM_SA="finance-team-sa"
+AUDITOR_SA="audit-sa"
+EMPLOYEE_SA="employee-sa"
+TEST_FILE="test_report.txt"
+ACTIVE_USER=$(gcloud config get-value core/account) # Get the active user email
+gcloud storage rm --recursive gs://$BUCKET_NAME
+rm $TEST_FILE
+gcloud iam service-accounts remove-iam-policy-binding \
+    $FINANCE_TEAM_SA@$PROJECT_ID.iam.gserviceaccount.com \
+    --member="user:$ACTIVE_USER" \
+    --role="roles/iam.serviceAccountTokenCreator"
+
+gcloud iam service-accounts remove-iam-policy-binding \
+    $AUDITOR_SA@$PROJECT_ID.iam.gserviceaccount.com \
+    --member="user:$ACTIVE_USER" \
+    --role="roles/iam.serviceAccountTokenCreator"
+
+gcloud iam service-accounts remove-iam-policy-binding \
+    $EMPLOYEE_SA@$PROJECT_ID.iam.gserviceaccount.com \
+    --member="user:$ACTIVE_USER" \
+    --role="roles/iam.serviceAccountTokenCreator"
+gcloud iam service-accounts delete "$FINANCE_TEAM_SA@$PROJECT_ID.iam.gserviceaccount.com" --quiet
+gcloud iam service-accounts delete "$AUDITOR_SA@$PROJECT_ID.iam.gserviceaccount.com" --quiet
+gcloud iam service-accounts delete "$EMPLOYEE_SA@$PROJECT_ID.iam.gserviceaccount.com" --quiet
+```
