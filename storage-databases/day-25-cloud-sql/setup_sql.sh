@@ -38,7 +38,7 @@ gcloud compute instances create $VM_INSTANCE_NAME \
     # Install MySQL client
     echo 'Installing MySQL client...'
      apt-get update && \
-     apt-get install -y mysql-server"
+     apt-get install -y mysql-client"
 
 # Step 3: Wait for the VM to be ready
 echo "Waiting for the VM to be ready..."
@@ -66,15 +66,16 @@ gcloud compute firewall-rules create allow-mysql-from-vm \
 # Step 7: SSH into the VM and run the gcloud sql connect command
 
 echo "Connecting to the VM and running MySQL commands..."
+CLOUD_SQL_IP=$(gcloud sql instances describe $INSTANCE_NAME --format='value(ipAddresses[0].ipAddress)')
 
 echo "Creating database '$DATABASE_NAME'..."
 gcloud compute ssh $VM_INSTANCE_NAME --zone=$ZONE --command="
-    sudo mysql --host=$CLOUD_SQL_IP --user=$DB_USER --password=$DB_PASSWORD -e 'CREATE DATABASE $DATABASE_NAME;'
+    mysql --host=$CLOUD_SQL_IP --user=$DB_USER --password=$DB_PASSWORD -e 'CREATE DATABASE $DATABASE_NAME;'
 "
 
 echo "Creating table '$TABLE_NAME' in database '$DATABASE_NAME'..."
 gcloud compute ssh $VM_INSTANCE_NAME --zone=$ZONE --command="
-    sudo mysql --host=$CLOUD_SQL_IP --user=$DB_USER --password=$DB_PASSWORD -e 'USE $DATABASE_NAME; CREATE TABLE $TABLE_NAME (
+    mysql --host=$CLOUD_SQL_IP --user=$DB_USER --password=$DB_PASSWORD -e 'USE $DATABASE_NAME; CREATE TABLE $TABLE_NAME (
         id INT AUTO_INCREMENT PRIMARY KEY,
         name VARCHAR(255) NOT NULL,
         email VARCHAR(255) NOT NULL,
@@ -83,22 +84,23 @@ gcloud compute ssh $VM_INSTANCE_NAME --zone=$ZONE --command="
     );'
 "
 
+
 echo "Inserting test data into table '$TABLE_NAME'..."
 gcloud compute ssh $VM_INSTANCE_NAME --zone=$ZONE --command="
-    sudo mysql --host=$CLOUD_SQL_IP --user=$DB_USER --password=$DB_PASSWORD -e 'USE $DATABASE_NAME; INSERT INTO $TABLE_NAME (name, email, phone, total_points) VALUES
+    mysql --host=$CLOUD_SQL_IP --user=$DB_USER --password=$DB_PASSWORD -e 'USE $DATABASE_NAME; INSERT INTO $TABLE_NAME (name, email, phone, total_points) VALUES
     (\"John Doe\", \"john.doe@example.com\", \"123-456-7890\", 100),
     (\"Jane Smith\", \"jane.smith@example.com\", \"987-654-3210\", 200);'
 "
 
 echo "Retrieving data from table '$TABLE_NAME' for verification..."
 gcloud compute ssh $VM_INSTANCE_NAME --zone=$ZONE --command="
-    sudo mysql --host=$CLOUD_SQL_IP --user=$DB_USER --password=$DB_PASSWORD -e 'USE $DATABASE_NAME; SELECT * FROM $TABLE_NAME;'
+    mysql --host=$CLOUD_SQL_IP --user=$DB_USER --password=$DB_PASSWORD -e 'USE $DATABASE_NAME; SELECT * FROM $TABLE_NAME;'
 "
 echo "Data retrieval attempted."
 
 
 # Step 8: Clean up (optional)
 echo "Script completed. To delete the instance, run:"
-echo "gcloud sql instances delete $INSTANCE_NAME"
-echo "gcloud compute instances delete $VM_INSTANCE_NAME --zone=$ZONE"
-echo "gcloud compute firewall-rules delete allow-mysql-from-vm"
+echo "gcloud sql instances delete $INSTANCE_NAME -q"
+echo "gcloud compute instances delete $VM_INSTANCE_NAME --zone=$ZONE -q"
+echo "gcloud compute firewall-rules delete allow-mysql-from-vm -q"
