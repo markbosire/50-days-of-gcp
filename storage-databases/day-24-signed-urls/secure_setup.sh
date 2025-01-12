@@ -35,9 +35,9 @@ gcloud projects add-iam-policy-binding "$PROJECT_ID" \
 # Generate a signed URL using `gcloud storage sign-url`
 echo "Generating signed URL with short expiration ($EXPIRATION_SHORT seconds)..."
  
-SIGNED_URL=$(gcloud storage sign-url "gs://$BUCKET_NAME/$MEDIA_FILE" \
+SIGNED_URL=$(gcloud storage sign-url "gs://$BUCKET_NAME/$OBJECT_NAME" \
     --duration="$EXPIRATION_SHORT" \
-    --private-key-file=<(gcloud iam service-accounts keys create - --iam-account="$CLIENT_SERVICE_ACCOUNT@$PROJECT_ID.iam.gserviceaccount.com") \
+    --private-key-file=<(gcloud iam service-accounts keys create - --iam-account="$SERVICE_ACCOUNT@$PROJECT_ID.iam.gserviceaccount.com") \
     --format="value(signed_url)")
 
 echo "Signed URL: $SIGNED_URL"
