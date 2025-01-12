@@ -34,3 +34,10 @@ This script automates the process of loading a dataset of world cities into Goog
 - `CSV_FILE`: The local filename for the downloaded CSV (`world-cities.csv`).
 - `SCHEMA`: The schema definition for the BigQuery table.
 
+## Clean Up
+
+```bash
+bq rm -f -t world_cities.cities 
+bq rm -r -f world_cities 
+rm -f world-cities.csv
+```
