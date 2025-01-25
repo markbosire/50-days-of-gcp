@@ -26,4 +26,4 @@ The script performs the following tasks:
 1. Ensure you have the Google Cloud SDK installed and configured.
 2. Run the script in your terminal:
    ```bash
-   ./encrypt.sh
+   bash encrypt.sh
