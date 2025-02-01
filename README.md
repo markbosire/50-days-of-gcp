@@ -52,10 +52,10 @@ Welcome to the 100 Days of GCP Challenge! This comprehensive learning path cover
 [Day 33: Storage Transfer Service](/storage-databases/day-33-storage-transfer/)  
 [Day 34: Encryption](/storage-databases/day-34-encryption/)  
 [Day 35: Cloud Memorystore](/storage-databases/day-35-memorystore/)  
-[Day 36: Database Migration](/storage-databases/day-36-database-migration/)  
+[Day 36: AlloyDB](/storage-databases/day-36-alloydb/)  
 [Day 37: Cloud Filestore](/storage-databases/day-37-filestore/)  
-[Day 38: Transfer Appliance](/storage-databases/day-38-transfer-appliance/)  
-[Day 39: Cloud Dataflow](/storage-databases/day-39-cloud-dataflow/)  
+[Day 38: Persistent Disk](/storage-databases/day-38-persistent-disk/)  
+[Day 39: Local SSD](/storage-databases/day-39-local-ssd)  
 [Day 40: Bucket Versioning](/storage-databases/day-40-bucket-versioning/)  
 
 ### Domain 3: Identity and Security
