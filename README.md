@@ -56,7 +56,7 @@ Welcome to the 100 Days of GCP Challenge! This comprehensive learning path cover
 [Day 37: Cloud Filestore](/storage-databases/day-37-filestore/)  
 [Day 38: Persistent Disk](/storage-databases/day-38-persistent-disk/)  
 [Day 39: Local SSD](/storage-databases/day-39-local-ssd)  
-[Day 40: Bucket Versioning](/storage-databases/day-40-bucket-versioning/)  
+[Day 40: Object Versioning](/storage-databases/day-40-object-versioning/)  
 
 ### Domain 3: Identity and Security
 
