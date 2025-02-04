@@ -26,4 +26,4 @@ bash cleanup.sh
 ```
 ## JWT DOCS
 
-Understand the JWT code here [JWT Docs](/jwt-docs/README.md)  
+Understand the JWT code here [JWT Docs](jwt-docs/README.md)  
