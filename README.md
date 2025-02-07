@@ -64,7 +64,7 @@ Welcome to the 100 Days of GCP Challenge! This comprehensive learning path cover
 [Day 42: Service Accounts](/identity-security/day-42-service-accounts/)  
 [Day 43: Cloud KMS](/identity-security/day-43-cloud-kms/)  
 [Day 44: Custom Roles](/identity-security/day-44-custom-roles/)  
-[Day 45: Resource Hierarchy](/identity-security/day-45-resource-hierarchy/)  
+[Day 45: Predefined Roles](/identity-security/day-45-predefined-roles/)  
 [Day 46: Cloud Identity](/identity-security/day-46-cloud-identity/)  
 [Day 47: Access Transparency](/identity-security/day-47-access-transparency/)  
 [Day 48: VPC Service Controls](/identity-security/day-48-vpc-service-controls/)  
