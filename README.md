@@ -67,7 +67,7 @@ Welcome to the 100 Days of GCP Challenge! This comprehensive learning path cover
 [Day 45: Predefined Roles](/identity-security/day-45-predefined-roles/)  
 [Day 46: OAuth](/identity-security/day-46-oauth/)  
 [Day 47: Cloud Identity-Aware Proxy](/identity-security/day-47-identity-aware-proxy/)  
-[Day 48: VPC Service Controls](/identity-security/day-48-vpc-service-controls/)  
+[Day 48: Cloud Audit Logs](/identity-security/day-48-audit-logs/)  
 [Day 49: OAuth 2.0](/identity-security/day-49-oauth/)  
 [Day 50: IAM Conditions](/identity-security/day-50-iam-conditions/)  
 [Day 51: Cloud Audit Logs](/identity-security/day-51-audit-logs/)  
