@@ -44,11 +44,11 @@ This should return a valid authentication token.
 
 ## Cleanup
 To remove all resources created by this script:
-```sh
-kubectl delete pod test-pod --namespace=default
-kubectl delete serviceaccount ksa-workload --namespace=default
-gcloud container clusters delete my-gke-cluster --zone=us-central1-a --quiet
-```
-
-
-
+2. Make the script executable:
+   ```sh
+   chmod +x bash.sh
+   ```
+3. Run the script:
+   ```sh
+   ./bash.sh
+   ```
