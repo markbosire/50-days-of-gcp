@@ -1,7 +1,7 @@
-# 100 Days of Google Cloud Platform Challenge
+# 50 Days of Google Cloud Platform Challenge
 
 ## Overview
-Welcome to the 100 Days of GCP Challenge! This comprehensive learning path covers five essential domains of Google Cloud Platform through hands-on practical exercises. Each domain contains 20 exercises designed to build your expertise from fundamentals to advanced concepts.
+Welcome to the 50 Days of GCP Challenge! This comprehensive learning path covers five essential domains of Google Cloud Platform through hands-on practical exercises. Each domain contains exercises designed to build your expertise from fundamentals to advanced concepts.
 
 ## Prerequisites
 - A Google Cloud Platform account
@@ -69,68 +69,12 @@ Welcome to the 100 Days of GCP Challenge! This comprehensive learning path cover
 [Day 47: Cloud Identity-Aware Proxy](/identity-security/day-47-identity-aware-proxy/)  
 [Day 48: Cloud Audit Logs](/identity-security/day-48-audit-logs/)  
 [Day 49: Workload Identity Federation](/identity-security/day-49-workload-identity-federation/)  
-[Day 50: IAM Conditions](/identity-security/day-50-iam-conditions/)  
-[Day 51: Cloud Audit Logs](/identity-security/day-51-audit-logs/)  
-[Day 52: Security Scanner](/identity-security/day-52-security-scanner/)  
-[Day 53: Secret Manager](/identity-security/day-53-secret-manager/)  
-[Day 54: Cloud Armor Rules](/identity-security/day-54-cloud-armor-rules/)  
-[Day 55: API Gateway](/identity-security/day-55-api-gateway/)  
-[Day 56: Firewall Rules Logging](/identity-security/day-56-firewall-logging/)  
-[Day 57: Certificate Manager](/identity-security/day-57-certificate-manager/)  
-[Day 58: Cloud Identity-Aware Proxy](/identity-security/day-58-identity-aware-proxy/)  
-[Day 59: SAML Authentication](/identity-security/day-59-saml-auth/)  
-[Day 60: Cloud DLP](/identity-security/day-60-cloud-dlp/)  
-
-### Domain 4: Data and Analytics
-
-[Day 61: Cloud Pub/Sub](/data-analytics/day-61-pubsub/)  
-[Day 62: Dataflow Pipelines](/data-analytics/day-62-dataflow/)  
-[Day 63: BigQuery ML](/data-analytics/day-63-bigquery-ml/)  
-[Day 64: Cloud Dataprep](/data-analytics/day-64-dataprep/)  
-[Day 65: Cloud Data Fusion](/data-analytics/day-65-data-fusion/)  
-[Day 66: Cloud Composer](/data-analytics/day-66-composer/)  
-[Day 67: Monitoring Metrics](/data-analytics/day-67-monitoring-metrics/)  
-[Day 68: Log-based Metrics](/data-analytics/day-68-log-metrics/)  
-[Day 69: Data Studio](/data-analytics/day-69-data-studio/)  
-[Day 70: Cloud AI Notebooks](/data-analytics/day-70-ai-notebooks/)  
-[Day 71: Vertex AI](/data-analytics/day-71-vertex-ai/)  
-[Day 72: AutoML](/data-analytics/day-72-automl/)  
-[Day 73: BigQuery Federated Queries](/data-analytics/day-73-bigquery-federated/)  
-[Day 74: Data Catalog](/data-analytics/day-74-data-catalog/)  
-[Day 75: Dataproc Cluster](/data-analytics/day-75-dataproc/)  
-[Day 76: Streaming with Pub/Sub](/data-analytics/day-76-streaming-pubsub/)  
-[Day 77: Cloud Logging](/data-analytics/day-77-cloud-logging/)  
-[Day 78: Error Reporting](/data-analytics/day-78-error-reporting/)  
-[Day 79: Trace Service](/data-analytics/day-79-trace-service/)  
-[Day 80: Monitoring Alerts](/data-analytics/day-80-monitoring-alerts/)  
-
-### Domain 5: DevOps and CI/CD
-
-[Day 81: Cloud Source Repositories](/devops-cicd/day-81-source-repos/)  
-[Day 82: Cloud Build](/devops-cicd/day-82-cloud-build/)  
-[Day 83: Container Registry](/devops-cicd/day-83-container-registry/)  
-[Day 84: Artifact Registry](/devops-cicd/day-84-artifact-registry/)  
-[Day 85: Cloud Build Triggers](/devops-cicd/day-85-build-triggers/)  
-[Day 86: Continuous Deployment](/devops-cicd/day-86-continuous-deployment/)  
-[Day 87: Terraform on GCP](/devops-cicd/day-87-terraform/)  
-[Day 88: Ansible with GCP](/devops-cicd/day-88-ansible/)  
-[Day 89: CI/CD Pipeline](/devops-cicd/day-89-cicd-pipeline/)  
-[Day 90: Cloud Tasks](/devops-cicd/day-90-cloud-tasks/)  
-[Day 91: Stackdriver Monitoring](/devops-cicd/day-91-stackdriver/)  
-[Day 92: Error Reporting](/devops-cicd/day-92-error-reporting/)  
-[Day 93: Secret Rotation](/devops-cicd/day-93-secret-rotation/)  
-[Day 94: Infrastructure as Code](/devops-cicd/day-94-infrastructure-code/)  
-[Day 95: Testing Pipelines](/devops-cicd/day-95-testing-pipelines/)  
-[Day 96: Cloud Scheduler](/devops-cicd/day-96-cloud-scheduler/)  
-[Day 97: Policy-as-Code](/devops-cicd/day-97-policy-code/)  
-[Day 98: Release Management](/devops-cicd/day-98-release-management/)  
-[Day 99: Backup Pipelines](/devops-cicd/day-99-backup-pipelines/)  
-[Day 100: Cloud Debugger](/devops-cicd/day-100-cloud-debugger/)  
+[Day 50: WHOAMI](/identity-security/day-50-whoami/)  
 
 
 
 ## Acknowledgments
-This challenge is inspired by the #100DaysOfCode movement and adapted for Google Cloud Platform learning.
+This challenge is inspired by the #50DaysOfCode movement and adapted for Google Cloud Platform learning.
 
 ---
 *Remember: Consistency is key. Take your time to understand each concept thoroughly before moving to the next exercise.*
